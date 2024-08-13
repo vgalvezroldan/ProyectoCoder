@@ -1,34 +1,35 @@
 <!DOCTYPE html>
-<!-- Lenguaje de la página -->
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Título de la página -->
+    <!-- Título de la Página -->
     <title>DyD Tecnology</title>
-    <!-- Vínculo CSS -->
-    <link rel="stylesheet" href="static/css/style.css">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="static/css/styles.css">
     <!-- CDN Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="static/img/new_logo.png">
+    <link rel="icon" type="image/png" href="static/img/logo.png">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
 </head>
 
-<!-- Cuerpo de la página | Tema DARK - Boostrap -->
-
-<body data-bs-theme="dark">
+<body>
     <header>
-        <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <!-- Comienzo Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
             <div class="container-fluid">
-                <!-- Logo del Navbar -->
                 <a class="navbar-brand" href="#">
-                    <img src="static/img/new_logo.png" alt="Logo DyD">
+                    <img src="static/img/logo.png" alt="Logo DyD" class="navbar-logo">
                 </a>
-                <!-- Fin Logo -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -36,9 +37,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <!-- Opciones del Navbar -->
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="pages/productos.html">Productos</a>
@@ -48,183 +48,408 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="pages/nosotros.html">Sobre Nosotros</a>
-                        </li>
                     </ul>
-                    <!-- Barra de Búsqueda -->
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                    </form>
+                    <div class="navbar-icons d-none d-lg-flex align-items-center">
+                        <i class="bi bi-person-circle me-3"></i>
+                        <i class="bi bi-cart2" style="padding-bottom: 4px;"></i>
+                    </div>
                 </div>
             </div>
         </nav>
+        <!-- End Navbar -->
     </header>
-
-    <main class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <!-- Carrusel de Imágenes -->
-                <div id="carouselExampleCaptions" class="carousel slide carousel-edit" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <!-- 1era Imagen Carrusel -->
-                        <div class="carousel-item active">
-                            <img src="static/img/banner-informatica.png" class="d-block w-100" alt="Banner MSI">
-                        </div>
-                        <!-- 2da Imagen Carrusel -->
-                        <div class="carousel-item">
-                            <img src="static/img/banner-informatica2.png" class="d-block w-100" alt="Banner Mundo-Inf">
-                        </div>
-                        <!-- 3ra Imagen Carrusel -->
-                        <div class="carousel-item">
-                            <img src="static/img/banner-informatica3.webp" class="d-block w-100" alt="Banner Teclado">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-                <!-- Fin Carrusel -->
-                <!-- Lorem Debajo Carrusel -->
-                <p class="text-center mt-4">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, quas eveniet et tenetur labore,
-                    officia delectus repellat voluptas fugit aspernatur eligendi adipisci sint, perferendis
-                    exercitationem!
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. In eligendi ea inventore aut voluptatem
-                    nemo,
-                    accusantium et consequuntur corporis suscipit hic molestias aliquid cum aliquam illum placeat eius
-                    neque
-                    corrupti dolorum animi culpa ducimus repellendus mollitia.
-                    Nostrum doloribus quasi consequuntur dolorem velit, quis soluta quas, dolor aliquam, vitae veniam
-                    asperiores?
-                </p>
-                <!-- Título Cards -->
-                <h2 id="titulo" class="fst-italic mt-4">Novedades</h2>
-                <section class="productos row mt-4">
-                    <!-- Producto 1 -->
-                    <div class="col-12 col-md-6 mb-4 d-flex justify-content-center">
-                        <div class="card" style="width: 18rem;">
-                            <img src="static/img/kingston.webp" class="card-img-top" alt="Disco SSD 240 GB Kingston">
-                            <div class="card-body">
-                                <h5 class="card-title">Disco SSD 240 GB Kingston</h5>
-                                <p class="card-text">Precio: $27.000 CLP</p>
-                                <a href="#" class="btn btn-primary">Ver Más</a>
-                                <a href="#" class="btn btn-secondary">Agregar al Carrito</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Producto 2 -->
-                    <div class="col-12 col-md-6 mb-4 d-flex justify-content-center">
-                        <div class="card" style="width: 18rem;">
-                            <img src="static/img/thinkpad.jpg" class="card-img-top"
-                                alt="Notebook Thinkpad X1 I7 Carbon">
-                            <div class="card-body">
-                                <h5 class="card-title">Notebook Thinkpad X1 I7 Carbon</h5>
-                                <p class="card-text">Precio: $800.000 CLP</p>
-                                <a href="#" class="btn btn-primary">Ver Más</a>
-                                <a href="#" class="btn btn-secondary">Agregar al Carrito</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Producto 3 -->
-                    <div class="col-12 col-md-6 mb-4 d-flex justify-content-center">
-                        <div class="card" style="width: 18rem;">
-                            <img src="static/img/nas.webp" class="card-img-top" alt="Servidor NAS WD Cloud 12TB">
-                            <div class="card-body">
-                                <h5 class="card-title">Servidor NAS WD Cloud 12TB</h5>
-                                <p class="card-text">Precio: $600.000 CLP</p>
-                                <a href="#" class="btn btn-primary">Ver Más</a>
-                                <a href="#" class="btn btn-secondary">Agregar al Carrito</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Producto 4 -->
-                    <div class="col-12 col-md-6 mb-4 d-flex justify-content-center">
-                        <div class="card" style="width: 18rem;">
-                            <img src="static/img/silla.webp" class="card-img-top"
-                                alt="Silla Gamer de Oficina Profesional">
-                            <div class="card-body">
-                                <h5 class="card-title">Silla Gamer de Oficina Profesional</h5>
-                                <p class="card-text">Precio: $150.000 CLP</p>
-                                <a href="#" class="btn btn-primary">Ver Más</a>
-                                <a href="#" class="btn btn-secondary">Agregar al Carrito</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+    <main>
+        <!-- Comienzo Carrusel -->
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
-            <!-- Aside -->
-            <aside class="col-md-4" style="margin-top: 3rem;">
-                <div class="position-sticky" style="top: 2rem;">
-                    <!-- Sección Categoría ASIDE -->
-                    <div class="p-4">
-                        <h4 class="fst-italic">Categorías</h4>
-                        <ol class="list-unstyled mb-0">
-                            <li><a href="#" style="text-decoration: none;">Discos Duros</a></li>
-                            <li><a href="#" style="text-decoration: none;">Notebooks</a></li>
-                            <li><a href="#" style="text-decoration: none;">Servidores</a></li>
-                            <li><a href="#" style="text-decoration: none;">Accesorios</a></li>
-                        </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://d3okvk28mv0bs6.cloudfront.net/uploads/699b8419-8847-497c-9606-38bbf7727b05/original/Modyo-WEB-Banner-Pricipal-1792X49051460-51919.webp"
+                        class="d-block w-100" alt="Banner DyD">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://d3okvk28mv0bs6.cloudfront.net/uploads/ae457b0f-e0cc-4204-8193-d14fda1f0fbf/original/Modyo-WEB-Banner-Pricipal-1792X49048358-49948.webp"
+                        class="d-block w-100" alt="Banner DyD 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://d3okvk28mv0bs6.cloudfront.net/uploads/699b8419-8847-497c-9606-38bbf7727b05/original/Modyo-WEB-Banner-Pricipal-1792X49051460-51919.webp"
+                        class="d-block w-100" alt="Banner DyD 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- End Carrusel -->
+        <!-- Comienzo Galeria de Imagenes -->
+        <section class="productos-section">
+            <div class="productos-title">
+                <h2>NOVEDADES</h2>
+            </div>
+            <div class="productos-container">
+                <div class="producto-item producto-vertical">
+                    <img src="https://cintegralads.b-cdn.net/wp-content/uploads/2023/08/ZBOOK.jpg"
+                        alt="Imagen Vertical">
+                </div>
+                <div class="producto-item producto-horizontal">
+                    <img src="https://cintegralads.b-cdn.net/wp-content/uploads/2023/09/IMPRESORAS.jpg"
+                        alt="Imagen Horizontal">
+                    <img src="https://cintegralads.b-cdn.net/wp-content/uploads/2023/09/OFERTAS-1.jpg"
+                        alt="Imagen Horizontal">
+                </div>
+                <div class="producto-item producto-vertical">
+                    <img src="https://cintegralads.b-cdn.net/wp-content/uploads/2023/08/ZONA-GAMER.jpg"
+                        alt="Imagen Vertical">
+                </div>
+            </div>
+        </section>
+        <!-- End Galeria de Imagenes -->
+        <!-- Comienzo Galeria de Logos -->
+        <section class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="marcas-title">
+                            <h2>MARCAS</h2>
+                        </div>
                     </div>
-                    <!-- Sección Redes ASIDE -->
-                    <div class="p-4">
-                        <h4 class="fst-italic">Nuestras Redes</h4>
-                        <ol class="list-unstyled">
-                            <li><a href="https://github.com/vgalvezroldan?tab=repositories"
-                                    style="text-decoration: none;"><i class="fab fa-github">
-                                        <!-- Icono Github - Bootstrap-->
-                                    </i>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                                        <path
-                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                                    </svg></a>
-                            </li>
-                            <li><a href="#" style="text-decoration: none;"><i class="fab fa-facebook">
-                                        <!-- Icono Facebook - Bootstrap-->
-                                    </i>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                                        <path
-                                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
-                                    </svg></a></li>
-                        </ol>
-                    </div>
-                    <!-- Sección Cómo Llegar ASIDE -->
-                    <div class="p-4">
-                        <h4 class="fst-italic">Cómo Llegar</h4>
-                        <ol class="list-unstyled">
-                            <li><!-- Mapa extraído de Google Maps -->
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.1400625984757!2d-70.71322102398474!3d-33.549737073350265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662db842c1a909d%3A0x11998d95840f6198!2sGral.%20Vel%C3%A1squez%2010901%2C%208060047%20Maipo%2C%20San%20Bernardo%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1722278406543!5m2!1ses!2scl"
-                                    style="border: 2px solid black;; width: 30vh; height: 30vh;" allowfullscreen=""
-                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </li>
-                        </ol>
+                    <div class="col-12">
+                        <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="Redragon" src="static/img/redragon.svg">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="AMD" src="static/img/amd.svg">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="Razer" src="static/img/razer.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="Kingston" src="static/img/kingston-3.svg">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="Corsair" src="static/img/corsair-2.svg">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="Cooler Master"
+                                                    src="static/img/cooler-master-logo.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="Gigabyte" src="static/img/gigabyte-1.svg">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="MSI" src="static/img/msi-gaming.svg">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="Playstation"
+                                                    src="static/img/playstation-logo-and-wordmark.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </aside>
-        </div>
+            </div>
+        </section>
+        <!-- End Galeria de Logos -->
+        <!-- Comienzo Galeria de Productos -->
+        <section class="productos-section">
+            <div class="productos-title">
+                <h2>PRODUCTOS</h2>
+            </div>
+            <div class="container">
+                <div id="carouselProductos" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Primera iteración con 4 productos -->
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <!-- Producto 1 -->
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="https://i.ebayimg.com/images/g/MSYAAOSwBRlmVivh/s-l500.webp"
+                                            class="card-img-top" alt="Producto 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Consola Playstation 5 HW
+                                                Slim Standar Superbundle
+                                            </h5>
+                                            <p class="brand-subtitle text-muted">Marca: Playstation</p>
+                                            <div
+                                                class="product-details d-flex justify-content-between align-items-center mb-2">
+                                                <span class="product-id">ID 51748</span>
+                                                <span class="product-stock">+50 Unid.</span>
+                                            </div>
+                                            <div class="product-prices mb-2">
+                                                <p class="price">$649.990 <small>Transf.</small></p>
+                                                <p class="price">$670.090 <small>Otros medios de pago</small></p>
+                                            </div>
+                                            <button class="btn btn-primary">
+                                                <i class="bi bi-cart-plus"></i> Agregar al carrito
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Producto 2 -->
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="https://imagenes.pc-express.cl/image/cache/catalog/productos/11315/1_1635253524000.-350x350.jpg"
+                                            class="card-img-top" alt="Producto 2">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Tarjeta de Video Geforce Asus RT 3060 12GB OC
+                                                Gaming PCIEX
+                                            </h5>
+                                            <p class="brand-subtitle text-muted">Marca: Asus</p>
+                                            <div
+                                                class="product-details d-flex justify-content-between align-items-center mb-2">
+                                                <span class="product-id">ID 49677</span>
+                                                <span class="product-stock">5 Unid.</span>
+                                            </div>
+                                            <div class="product-prices mb-2">
+                                                <p class="price">$323.900 <small>Transf.</small></p>
+                                                <p class="price">$344.574 <small>Otros medios de pago</small></p>
+                                            </div>
+                                            <button class="btn btn-primary">
+                                                <i class="bi bi-cart-plus"></i> Agregar al carrito
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Producto 3 -->
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="https://imagenes.pc-express.cl/image/cache/catalog/productos/18880/1_1715902255000.-350x350.jpg"
+                                            class="card-img-top" alt="Producto 3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Monitor LG 49" ULTRAGEAR
+                                                5120 X 1440 1MS 144HZ
+                                            </h5>
+                                            <p class="brand-subtitle text-muted">Marca: LG</p>
+                                            <div
+                                                class="product-details d-flex justify-content-between align-items-center mb-2">
+                                                <span class="product-id">ID 49140</span>
+                                                <span class="product-stock">15 Unid.</span>
+                                            </div>
+                                            <div class="product-prices mb-2">
+                                                <p class="price">$1.079.900 <small>Transf.</small></p>
+                                                <p class="price">$1.148.830 <small>Otros medios de pago</small></p>
+                                            </div>
+                                            <button class="btn btn-primary">
+                                                <i class="bi bi-cart-plus"></i> Agregar al carrito
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Producto 4 -->
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="https://ac-resources.nyc3.cdn.digitaloceanspaces.com/images/products/20240627_173057_1.png"
+                                            class="card-img-top" alt="Producto 4">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Ventilador para CPU Cooler 
+                                                Master Hyper 212 
+                                                NEW</h5>
+                                            <p class="brand-subtitle text-muted">Marca: Cooler Master</p>
+                                            <div
+                                                class="product-details d-flex justify-content-between align-items-center mb-2">
+                                                <span class="product-id">ID 49679</span>
+                                                <span class="product-stock">10 Unid.</span>
+                                            </div>
+                                            <div class="product-prices mb-2">
+                                                <p class="price">$32.500 <small>Transf.</small></p>
+                                                <p class="price">$34.574 <small>Otros medios de pago</small></p>
+                                            </div>
+                                            <button class="btn btn-primary">
+                                                <i class="bi bi-cart-plus"></i> Agregar al carrito
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Segunda vista con 4 productos (Similar a la primera vista) -->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <!-- Producto 1 -->
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="https://ac-resources.nyc3.cdn.digitaloceanspaces.com/images/products/kcp556ss8-16.jpg"
+                                            class="card-img-top" alt="Producto 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Memoria Sodimm DDR5 Kingston
+                                                16GB 5600MT/S UNBUFFERED
+                                            </h5>
+                                            <p class="brand-subtitle text-muted">Marca: Kingston</p>
+                                            <div
+                                                class="product-details d-flex justify-content-between align-items-center mb-2">
+                                                <span class="product-id">ID 49501</span>
+                                                <span class="product-stock">30 Unid.</span>
+                                            </div>
+                                            <div class="product-prices mb-2">
+                                                <p class="price">$57.500 <small>Transf.</small></p>
+                                                <p class="price">$61.170 <small>Otros medios de pago</small></p>
+                                            </div>
+                                            <button class="btn btn-primary">
+                                                <i class="bi bi-cart-plus"></i> Agregar al carrito
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Producto 2 -->
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="https://ac-resources.nyc3.cdn.digitaloceanspaces.com/images/products/20240725_093912_1.png"
+                                            class="card-img-top" alt="Producto 2">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Audifono Gamer Razer Blackshark V2 X - Wired
+                                            - RZ04-04570100-R3U1 
+                                            </h5>
+                                            <p class="brand-subtitle text-muted">Marca: Razer</p>
+                                            <div
+                                                class="product-details d-flex justify-content-between align-items-center mb-2">
+                                                <span class="product-id">ID 49201</span>
+                                                <span class="product-stock">12 Unid.</span>
+                                            </div>
+                                            <div class="product-prices mb-2">
+                                                <p class="price">$69.500 <small>Transf.</small></p>
+                                                <p class="price">$73.933 <small>Otros medios de pago</small></p>
+                                            </div>
+                                            <button class="btn btn-primary">
+                                                <i class="bi bi-cart-plus"></i> Agregar al carrito
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Producto 3 -->
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="https://ac-resources.nyc3.cdn.digitaloceanspaces.com/images/products/658232_20240709_150759.png"
+                                            class="card-img-top" alt="Producto 3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Mouse Gamer Razer Viper V3
+                                                Hyperspeed Black FRML
+                                            </h5>
+                                            <p class="brand-subtitle text-muted">Marca: Razer</p>
+                                            <div
+                                                class="product-details d-flex justify-content-between align-items-center mb-2">
+                                                <span class="product-id">ID 49581</span>
+                                                <span class="product-stock">+100 Unid.</span>
+                                            </div>
+                                            <div class="product-prices mb-2">
+                                                <p class="price">$80.500 <small>Transf.</small></p>
+                                                <p class="price">$85.638 <small>Otros medios de pago</small></p>
+                                            </div>
+                                            <button class="btn btn-primary">
+                                                <i class="bi bi-cart-plus"></i> Agregar al carrito
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Producto 4 -->
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="https://ac-resources.nyc3.cdn.digitaloceanspaces.com/images/products/20240725_093926_1.png"
+                                            class="card-img-top" alt="Producto 4">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Teclado Mecanico Razer Ornata
+                                                V3 Bajo Perfil - 
+                                                RGB Español
+                                            </h5>
+                                            <p class="brand-subtitle text-muted">Marca: Razer</p>
+                                            <div
+                                                class="product-details d-flex justify-content-between align-items-center mb-2">
+                                                <span class="product-id">ID 49679</span>
+                                                <span class="product-stock">10 Unid.</span>
+                                            </div>
+                                            <div class="product-prices mb-2">
+                                                <p class="price">$68.500 <small>Transf.</small></p>
+                                                <p class="price">$72.872 <small>Otros medios de pago</small></p>
+                                            </div>
+                                            <button class="btn btn-primary">
+                                                <i class="bi bi-cart-plus"></i> Agregar al carrito
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controles del carrusel -->
+                    <a class="carousel-control-prev" href="#carouselProductos" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselProductos" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
-    <!-- Pie de Página -->
-    <footer class="text-center mt-4">
-        Desarrollado por <a href="https://github.com/vgalvezroldan?tab=repositories">Vincent</a>
+    <!-- End Galeria de Productos -->
+    <!-- Comienzo Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <p>DyD Tecnology - Todos los derechos reservados&reg;</p>
+            <p>Síguenos en nuestras redes:</p>
+            <div class="social-icons">
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-tiktok"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-facebook"></i>
+            </div>
+        </div>
     </footer>
-    <!-- CDN Bootstrap 2 -->
+    <!-- End Footer -->
+
+    <!-- CDN Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <!-- Scripts JS -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+    <script type='text/javascript'
+        src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
 </body>
-
 </html>
