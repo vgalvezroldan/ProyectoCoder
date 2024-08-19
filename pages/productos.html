@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Título de la Página -->
-        <title>Productos - DyD</title>
-        <!-- Estilos CSS -->
-        <link rel="stylesheet" href="../static/css/styles.css">
-        <!-- CDN Bootstrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <!-- Favicon -->
-        <link rel="icon" type="image/png" href="../static/img/logo.png">
-        <!-- Bootstrap Icons -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
-            rel="stylesheet">
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-        <!-- Font Awesome -->
-        <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la Página -->
+    <title>Productos - DyD</title>
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <!-- CDN Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../static/img/logo.png">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+</head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
@@ -45,6 +45,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="nosotros.html">Sobre Nosotros</a>
+                        </li>
                     </ul>
                     <div class="navbar-icons d-none d-lg-flex align-items-center">
                         <i class="bi bi-person-circle me-3"></i>
@@ -55,229 +56,222 @@
         </nav>
     </header>
     <main class="container-fluid mt-5 pt-5">
-        <div class="row">
-            <!-- Sidebar de Filtros -->
-            <aside class="col-lg-3 col-md-4 filter-sidebar">
-                <div class="filter-container">
-                    <h4>Filtrar por Marca</h4>
-                    <form>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="brand1">
-                            <label class="form-check-label" for="brand1">Marca 1</label>
-                        </div>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="brand2">
-                            <label class="form-check-label" for="brand2">Marca 2</label>
-                        </div>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="brand3">
-                            <label class="form-check-label" for="brand3">Marca 3</label>
-                        </div>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="brand4">
-                            <label class="form-check-label" for="brand4">Marca 4</label>
-                        </div>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="brand5">
-                            <label class="form-check-label" for="brand5">Marca 5</label>
-                        </div>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="brand6">
-                            <label class="form-check-label" for="brand6">Marca 6</label>
-                        </div>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="brand7">
-                            <label class="form-check-label" for="brand7">Marca 7</label>
-                        </div>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="brand8">
-                            <label class="form-check-label" for="brand8">Marca 8</label>
-                        </div>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="brand9">
-                            <label class="form-check-label" for="brand9">Marca 9</label>
-                        </div>
-                        <button type="submit" class="btn-filter">Filtrar</button>
-                    </form>
-                </div>
-            </aside>
-            <!-- End Sidebar -->
-            <!-- Cards Productos -->
-            <div class="col-lg-9 col-md-8 product-content">
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
-                        <div class="card">
-                            <img src="https://i.ebayimg.com/images/g/MSYAAOSwBRlmVivh/s-l500.webp" class="card-img-top" alt="Producto">
-                            <div class="card-body">
-                                <h5 class="card-title">Producto 1</h5>
-                                <p class="brand-subtitle text-muted">Marca: Ejemplo</p>
-                                <div class="product-details d-flex justify-content-between align-items-center mb-2">
-                                    <span class="product-id">ID 12345</span>
-                                    <span class="product-stock">10 Unid.</span>
-                                </div>
-                                <div class="product-prices mb-2">
-                                    <p class="price">$99.690 <small>Transf.</small></p>
-                                    <p class="price">$104.990 <small>Otros medios de pago</small></p>
-                                </div>
-                                <button class="btn btn-primary">
-                                    <i class="bi bi-cart-plus"></i> Agregar al carrito
-                                </button>
-                            </div>
-                        </div>
+        <aside class="filter-sidebar">
+            <div class="filter-container">
+                <h4>Filtros</h4>
+                <form>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="brand1">
+                        <label class="form-check-label" for="brand1">Redragon</label>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
-                        <div class="card">
-                            <img src="https://i.ebayimg.com/images/g/MSYAAOSwBRlmVivh/s-l500.webp" class="card-img-top" alt="Producto">
-                            <div class="card-body">
-                                <h5 class="card-title">Producto 1</h5>
-                                <p class="brand-subtitle text-muted">Marca: Ejemplo</p>
-                                <div class="product-details d-flex justify-content-between align-items-center mb-2">
-                                    <span class="product-id">ID 12345</span>
-                                    <span class="product-stock">10 Unid.</span>
-                                </div>
-                                <div class="product-prices mb-2">
-                                    <p class="price">$99.690 <small>Transf.</small></p>
-                                    <p class="price">$104.990 <small>Otros medios de pago</small></p>
-                                </div>
-                                <button class="btn btn-primary">
-                                    <i class="bi bi-cart-plus"></i> Agregar al carrito
-                                </button>
-                            </div>
-                        </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="brand2">
+                        <label class="form-check-label" for="brand2">AMD</label>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
-                        <div class="card">
-                            <img src="https://i.ebayimg.com/images/g/MSYAAOSwBRlmVivh/s-l500.webp" class="card-img-top" alt="Producto">
-                            <div class="card-body">
-                                <h5 class="card-title">Producto 1</h5>
-                                <p class="brand-subtitle text-muted">Marca: Ejemplo</p>
-                                <div class="product-details d-flex justify-content-between align-items-center mb-2">
-                                    <span class="product-id">ID 12345</span>
-                                    <span class="product-stock">10 Unid.</span>
-                                </div>
-                                <div class="product-prices mb-2">
-                                    <p class="price">$99.690 <small>Transf.</small></p>
-                                    <p class="price">$104.990 <small>Otros medios de pago</small></p>
-                                </div>
-                                <button class="btn btn-primary">
-                                    <i class="bi bi-cart-plus"></i> Agregar al carrito
-                                </button>
-                            </div>
-                        </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="brand3">
+                        <label class="form-check-label" for="brand3">MSI Gaming</label>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
-                        <div class="card">
-                            <img src="https://i.ebayimg.com/images/g/MSYAAOSwBRlmVivh/s-l500.webp" class="card-img-top" alt="Producto">
-                            <div class="card-body">
-                                <h5 class="card-title">Producto 1</h5>
-                                <p class="brand-subtitle text-muted">Marca: Ejemplo</p>
-                                <div class="product-details d-flex justify-content-between align-items-center mb-2">
-                                    <span class="product-id">ID 12345</span>
-                                    <span class="product-stock">10 Unid.</span>
-                                </div>
-                                <div class="product-prices mb-2">
-                                    <p class="price">$99.690 <small>Transf.</small></p>
-                                    <p class="price">$104.990 <small>Otros medios de pago</small></p>
-                                </div>
-                                <button class="btn btn-primary">
-                                    <i class="bi bi-cart-plus"></i> Agregar al carrito
-                                </button>
-                            </div>
-                        </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="brand4">
+                        <label class="form-check-label" for="brand4">Kingston</label>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
-                        <div class="card">
-                            <img src="https://i.ebayimg.com/images/g/MSYAAOSwBRlmVivh/s-l500.webp" class="card-img-top" alt="Producto">
-                            <div class="card-body">
-                                <h5 class="card-title">Producto 1</h5>
-                                <p class="brand-subtitle text-muted">Marca: Ejemplo</p>
-                                <div class="product-details d-flex justify-content-between align-items-center mb-2">
-                                    <span class="product-id">ID 12345</span>
-                                    <span class="product-stock">10 Unid.</span>
-                                </div>
-                                <div class="product-prices mb-2">
-                                    <p class="price">$99.690 <small>Transf.</small></p>
-                                    <p class="price">$104.990 <small>Otros medios de pago</small></p>
-                                </div>
-                                <button class="btn btn-primary">
-                                    <i class="bi bi-cart-plus"></i> Agregar al carrito
-                                </button>
-                            </div>
-                        </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="brand5">
+                        <label class="form-check-label" for="brand5">Corsair</label>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
-                        <div class="card">
-                            <img src="https://i.ebayimg.com/images/g/MSYAAOSwBRlmVivh/s-l500.webp" class="card-img-top" alt="Producto">
-                            <div class="card-body">
-                                <h5 class="card-title">Producto 1</h5>
-                                <p class="brand-subtitle text-muted">Marca: Ejemplo</p>
-                                <div class="product-details d-flex justify-content-between align-items-center mb-2">
-                                    <span class="product-id">ID 12345</span>
-                                    <span class="product-stock">10 Unid.</span>
-                                </div>
-                                <div class="product-prices mb-2">
-                                    <p class="price">$99.690 <small>Transf.</small></p>
-                                    <p class="price">$104.990 <small>Otros medios de pago</small></p>
-                                </div>
-                                <button class="btn btn-primary">
-                                    <i class="bi bi-cart-plus"></i> Agregar al carrito
-                                </button>
-                            </div>
-                        </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="brand6">
+                        <label class="form-check-label" for="brand6">Playstation</label>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
-                        <div class="card">
-                            <img src="https://i.ebayimg.com/images/g/MSYAAOSwBRlmVivh/s-l500.webp" class="card-img-top" alt="Producto">
-                            <div class="card-body">
-                                <h5 class="card-title">Producto 1</h5>
-                                <p class="brand-subtitle text-muted">Marca: Ejemplo</p>
-                                <div class="product-details d-flex justify-content-between align-items-center mb-2">
-                                    <span class="product-id">ID 12345</span>
-                                    <span class="product-stock">10 Unid.</span>
-                                </div>
-                                <div class="product-prices mb-2">
-                                    <p class="price">$99.690 <small>Transf.</small></p>
-                                    <p class="price">$104.990 <small>Otros medios de pago</small></p>
-                                </div>
-                                <button class="btn btn-primary">
-                                    <i class="bi bi-cart-plus"></i> Agregar al carrito
-                                </button>
-                            </div>
-                        </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="brand7">
+                        <label class="form-check-label" for="brand7">Razer</label>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
-                        <div class="card">
-                            <img src="https://i.ebayimg.com/images/g/MSYAAOSwBRlmVivh/s-l500.webp" class="card-img-top" alt="Producto">
-                            <div class="card-body">
-                                <h5 class="card-title">Producto 1</h5>
-                                <p class="brand-subtitle text-muted">Marca: Ejemplo</p>
-                                <div class="product-details d-flex justify-content-between align-items-center mb-2">
-                                    <span class="product-id">ID 12345</span>
-                                    <span class="product-stock">10 Unid.</span>
-                                </div>
-                                <div class="product-prices mb-2">
-                                    <p class="price">$99.690 <small>Transf.</small></p>
-                                    <p class="price">$104.990 <small>Otros medios de pago</small></p>
-                                </div>
-                                <button class="btn btn-primary">
-                                    <i class="bi bi-cart-plus"></i> Agregar al carrito
-                                </button>
-                            </div>
-                        </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="brand8">
+                        <label class="form-check-label" for="brand8">Cooler Master</label>
                     </div>
-                    <!--  -->
-                </div>
+                    <button type="submit" class="btn-filter">Filtrar</button>
+                </form>
             </div>
-        </div>
-
+        </aside>
+        
+        <section class="productos-section">
+            <div class="productos-title">
+                <h2>PRODUCTOS</h2>
+            </div>
+            <div class="productos-container">
+                <div class="card">
+                    <img src="https://www.wei.cl/img/product/64F73WBWA6g.png?nocache=MjI4MTMx" class="card-img-top" alt="Producto">
+                    <div class="card-body">
+                        <h5 class="card-title">Procesador Intel Core I7-13700f</h5>
+                        <p class="brand-subtitle text-muted">Marca: Intel</p>
+                        <div class="product-details d-flex justify-content-between align-items-center mb-2">
+                            <span class="product-id">ID 91025</span>
+                            <span class="product-stock">10 Unid.</span>
+                        </div>
+                        <div class="product-prices mb-2">
+                            <p class="price">$463.874 <small>Transf.</small></p>
+                            <p class="price">$473.340 <small>Otros medios de pago</small></p>
+                        </div>
+                        <button class="btn btn-primary">
+                            <i class="bi bi-cart-plus"></i> Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.wei.cl/img/product/67JT29F7ODg.jpeg?nocache=NzUxMjg=" class="card-img-top" alt="Producto">
+                    <div class="card-body">
+                        <h5 class="card-title">Placa Madre ASUS TUF Gaming Z790-Plus</h5>
+                        <p class="brand-subtitle text-muted">Marca: ASUS</p>
+                        <div class="product-details d-flex justify-content-between align-items-center mb-2">
+                            <span class="product-id">ID 91265</span>
+                            <span class="product-stock">32 Unid.</span>
+                        </div>
+                        <div class="product-prices mb-2">
+                            <p class="price">$292.990 <small>Transf.</small></p>
+                            <p class="price">$298.969 <small>Otros medios de pago</small></p>
+                        </div>
+                        <button class="btn btn-primary">
+                            <i class="bi bi-cart-plus"></i> Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.wei.cl/img/product/24F7F42DE1g.jpeg?nocache=MzcwOTk=" class="card-img-top" alt="Producto">
+                    <div class="card-body">
+                        <h5 class="card-title">Memoria RAM Kingston Fury 48GB</h5>
+                        <p class="brand-subtitle text-muted">Marca: Kingston</p>
+                        <div class="product-details d-flex justify-content-between align-items-center mb-2">
+                            <span class="product-id">ID 98734</span>
+                            <span class="product-stock">5 Unid.</span>
+                        </div>
+                        <div class="product-prices mb-2">
+                            <p class="price">$216.263 <small>Transf.</small></p>
+                            <p class="price">$220.677 <small>Otros medios de pago</small></p>
+                        </div>
+                        <button class="btn btn-primary">
+                            <i class="bi bi-cart-plus"></i> Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://ac-resources.nyc3.cdn.digitaloceanspaces.com/images/products/39159_20240603_174102.png" class="card-img-top" alt="Producto">
+                    <div class="card-body">
+                        <h5 class="card-title">Procesador Intel I9-14900KF 3.2 GHz 8CORE</h5>
+                        <p class="brand-subtitle text-muted">Marca: Intel</p>
+                        <div class="product-details d-flex justify-content-between align-items-center mb-2">
+                            <span class="product-id">ID 98405</span>
+                            <span class="product-stock">15 Unid.</span>
+                        </div>
+                        <div class="product-prices mb-2">
+                            <p class="price">$727.900 <small>Transf.</small></p>
+                            <p class="price">$774.362 <small>Otros medios de pago</small></p>
+                        </div>
+                        <button class="btn btn-primary">
+                            <i class="bi bi-cart-plus"></i> Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://imagenes.pc-express.cl/image/cache/catalog/productos/18903/1_1715471270000.-350x350.jpg" class="card-img-top" alt="Producto">
+                    <div class="card-body">
+                        <h5 class="card-title">Fuente de Poder MSI 750W 80 Plus</h5>
+                        <p class="brand-subtitle text-muted">Marca: MSI</p>
+                        <div class="product-details d-flex justify-content-between align-items-center mb-2">
+                            <span class="product-id">ID 93214</span>
+                            <span class="product-stock">5 Unid.</span>
+                        </div>
+                        <div class="product-prices mb-2">
+                            <p class="price">$76.900 <small>Transf.</small></p>
+                            <p class="price">$81.809 <small>Otros medios de pago</small></p>
+                        </div>
+                        <button class="btn btn-primary">
+                            <i class="bi bi-cart-plus"></i> Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://imagenes.pc-express.cl/image/cache/catalog/productos/17632/1_1693497369000.-350x350.jpg" class="card-img-top" alt="Producto">
+                    <div class="card-body">
+                        <h5 class="card-title">Gabinete Gamer MSI MAG Forge M100A</h5>
+                        <p class="brand-subtitle text-muted">Marca: MSI</p>
+                        <div class="product-details d-flex justify-content-between align-items-center mb-2">
+                            <span class="product-id">ID 92045</span>
+                            <span class="product-stock">+99 Unid.</span>
+                        </div>
+                        <div class="product-prices mb-2">
+                            <p class="price">$49.700 <small>Transf.</small></p>
+                            <p class="price">$52.872 <small>Otros medios de pago</small></p>
+                        </div>
+                        <button class="btn btn-primary">
+                            <i class="bi bi-cart-plus"></i> Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://imagenes.pc-express.cl/image/cache/catalog/productos/13787/1_1645189370000.-350x350.jpg" class="card-img-top" alt="Producto">
+                    <div class="card-body">
+                        <h5 class="card-title">Sistema de Refrigeración Líquida Gygabyte Aorus</h5>
+                        <p class="brand-subtitle text-muted">Marca: Gigabyte</p>
+                        <div class="product-details d-flex justify-content-between align-items-center mb-2">
+                            <span class="product-id">ID 91285</span>
+                            <span class="product-stock">20 Unid.</span>
+                        </div>
+                        <div class="product-prices mb-2">
+                            <p class="price">$229.900 <small>Transf.</small></p>
+                            <p class="price">$244.574<small>Otros medios de pago</small></p>
+                        </div>
+                        <button class="btn btn-primary">
+                            <i class="bi bi-cart-plus"></i> Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://imagenes.pc-express.cl/image/cache/catalog/productos/17540/1_1692063959000.-350x350.jpg" class="card-img-top" alt="Producto">
+                    <div class="card-body">
+                        <h5 class="card-title">Tarjeta de Video GeForce Gigabyte RTX 4060 8GB</h5>
+                        <p class="brand-subtitle text-muted">Marca: Gigabyte</p>
+                        <div class="product-details d-flex justify-content-between align-items-center mb-2">
+                            <span class="product-id">ID 92015</span>
+                            <span class="product-stock">10 Unid.</span>
+                        </div>
+                        <div class="product-prices mb-2">
+                            <p class="price">$369.900 <small>Transf.</small></p>
+                            <p class="price">$393.511 <small>Otros medios de pago</small></p>
+                        </div>
+                        <button class="btn btn-primary">
+                            <i class="bi bi-cart-plus"></i> Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://imagenes.pc-express.cl/image/cache/catalog/productos/12288/1_1634824933000.-350x350.jpg" class="card-img-top" alt="Producto">
+                    <div class="card-body">
+                        <h5 class="card-title">Teclado Gamer Mecanico Gigabyte Aorus K7 Cherry MX RED</h5>
+                        <p class="brand-subtitle text-muted">Marca: Gigabyte</p>
+                        <div class="product-details d-flex justify-content-between align-items-center mb-2">
+                            <span class="product-id">ID 92334</span>
+                            <span class="product-stock">3 Unid.</span>
+                        </div>
+                        <div class="product-prices mb-2">
+                            <p class="price">$106.900 <small>Transf.</small></p>
+                            <p class="price">$113.723 <small>Otros medios de pago</small></p>
+                        </div>
+                        <button class="btn btn-primary">
+                            <i class="bi bi-cart-plus"></i> Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+                <!-- Más cards se pueden añadir aquí -->
+            </div>
+        </section>
         <div style="text-align: center;">
-            <a href="productos2.html" class="btn-siguiente" style="text-decoration: none;">
+            <a href="productos2.html" class="btn-siguiente">
                 Siguiente página
             </a>
-        </div>
-        
-        
-        
+        </div>        
     </main>
 
     <!-- Comienzo Footer -->

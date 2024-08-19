@@ -1,0 +1,39 @@
+@media (max-width: 991px) {
+  .navbar-custom .navbar-collapse {
+    justify-content: center;
+  }
+  
+  .productos-section .producto-horizontal img {
+    height: auto;
+  }
+
+  .pt-5.pb-5 .col-md-4 {
+    padding-top: $padding-base;
+  }
+
+  .product-content .col-lg-3 {
+    flex: 0 0 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .card {
+    width: 45%; // En pantallas medianas, cards ocupan un 45% del contenedor
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .productos-container {
+    display: flex;
+    justify-content: center; // Asegura que las cards se mantengan centradas
+    align-items: center; // Asegura que las cards se alineen verticalmente en el centro
+    flex-direction: column; // Las cards se apilan una debajo de la otra
+  }
+
+  .card {
+    width: 100%; // Las cards ocupan el 100% del contenedor
+    max-width: 300px; // Se asegura que las cards no sean más anchas que 300px
+    margin: 0 auto 20px; // Centramos la card y añadimos margen inferior
+  }
+}

@@ -1,0 +1,44 @@
+.navbar-custom {
+    background-color: $navbar-background;
+    @include flex-center;
+    width: 100%;
+
+    .container-fluid {
+        @include flex-center;
+        width: 100%;
+    }
+
+    .navbar-brand {
+        img.navbar-logo {
+            height: 50px;
+        }
+    }
+
+    .navbar-nav {
+        @include flex-center;
+        flex-grow: 1;
+        color: $navbar-text-color;
+    }
+
+    .navbar-icons {
+        @include flex-center;
+        font-size: 1.7rem;
+        color: $navbar-text-color;
+    }
+
+    .nav-link {
+        font-family: $font-family-base;
+        color: $navbar-text-color;
+        &:hover {
+            color: $hover-color;
+        }
+    }
+
+    .navbar-toggler {
+        border-color: $navbar-text-color;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28200, 200, 200, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+}

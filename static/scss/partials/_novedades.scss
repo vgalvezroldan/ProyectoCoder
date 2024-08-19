@@ -1,0 +1,63 @@
+.novedades-section {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    .novedades-title {
+      background-color: $primary-color;
+      text-align: center;
+      padding: 15px 0;
+      margin-bottom: 20px;
+      width: 100%;
+      max-width: 1090px;
+      h2 {
+        margin: 0;
+        font-weight: bold;
+        font-family: $font-family-base;
+        color: $secondary-color;
+      }
+    }
+  
+    .novedades-container {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0 20px;
+    }
+  
+    .novedad-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-height: 600px;
+  
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 1px;
+      }
+    }
+  
+    .novedad-vertical {
+      flex: 1 1 300px; // Ancho fijo para las imágenes verticales
+      max-width: 300px;
+    }
+  
+    .novedad-horizontal {
+      flex: 2 1 300px; // Las imágenes horizontales ocupan el doble de espacio
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      max-width: 600px;
+  
+      img {
+        height: 50%; // Cada imagen horizontal ocupa la mitad de la altura de su contenedor
+        max-height: 50%;
+      }
+    }
+  }
+  
