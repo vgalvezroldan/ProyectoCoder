@@ -59,7 +59,8 @@
     <link rel="preload" href="./static/img/gygabyte_aorus.webp" as="image">
     <link rel="preload" href="./static/img/cooler_master.webp" as="image">
     <link rel="preload" href="./static/img/monitores_gamer.webp" as="image">
-    
+    <!-- AOS Animación en Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -145,17 +146,21 @@
                 <h2>NOVEDADES</h2>
             </div>
             <div class="novedades-container">
+                <div data-aos="fade-right">
                 <div class="novedad-item novedad-vertical">
                     <img src="./static/img/PC-ARMADOS_1.webp"
                         alt="PC'S ARMADOS">
-                </div>
+                </div></div>
+                <div data-aos="flip-down">
                 <div class="novedad-item novedad-horizontal">
                     <img src="./static/img/gygabyte_aorus.webp" alt="GYGABYTE">
                     <img src="./static/img/cooler_master.webp" alt="COOLER-MASTER">
                 </div>
+                </div>
+                <div data-aos="fade-left">
                 <div class="novedad-item novedad-vertical">
                     <img src="./static/img/monitores_gamer.webp" alt="MONITORES-GAMERS">
-                </div>
+                </div></div>
             </div>
         </section>
         <!-- End Galeria de Imagenes -->
@@ -254,230 +259,210 @@
             <div class="productos-title">
                 <h2>PRODUCTOS</h2>
             </div>
-            <div class="container">
-                <div id="carouselProductos" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <!-- Primera iteración con 4 productos -->
-                        <div class="carousel-item active">
-                            <div class="row">
-                                <!-- Producto 1 -->
-                                <div class="col">
-                                    <div class="card">
-                                        <img src="https://i.ebayimg.com/images/g/MSYAAOSwBRlmVivh/s-l500.webp"
-                                            class="card-img-top" alt="Playstation 5">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Consola Playstation 5 HW
-                                                Slim Standar Superbundle
-                                            </h5>
-                                            <p class="brand-subtitle text-muted">Marca: Playstation</p>
-                                            <div
-                                                class="product-details d-flex justify-content-between align-items-center mb-2">
-                                                <span class="product-id">ID 51748</span>
-                                                <span class="product-stock">+50 Unid.</span>
+            <div data-aos="zoom-out">
+                <div class="container">
+                    <div id="carouselProductos" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- Primera iteración con 4 productos -->
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <!-- Producto 1 -->
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="https://i.ebayimg.com/images/g/MSYAAOSwBRlmVivh/s-l500.webp"
+                                                class="card-img-top" alt="Playstation 5">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Consola Playstation 5 HW Slim Standar Superbundle</h5>
+                                                <p class="brand-subtitle text-muted">Marca: Playstation</p>
+                                                <div class="product-details d-flex justify-content-between align-items-center mb-2">
+                                                    <span class="product-id">ID 51748</span>
+                                                    <span class="product-stock">+50 Unid.</span>
+                                                </div>
+                                                <div class="product-prices mb-2">
+                                                    <p class="price">$649.990 <small>Transf.</small></p>
+                                                    <p class="price">$670.090 <small>Otros medios de pago</small></p>
+                                                </div>
+                                                <button class="btn btn-primary">
+                                                    <i class="bi bi-cart-plus"></i> Agregar al carrito
+                                                </button>
                                             </div>
-                                            <div class="product-prices mb-2">
-                                                <p class="price">$649.990 <small>Transf.</small></p>
-                                                <p class="price">$670.090 <small>Otros medios de pago</small></p>
+                                        </div>
+                                    </div>
+                                    <!-- Producto 2 -->
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="./static/img/Geforce Asus RT 3060.jpg" class="card-img-top"
+                                                alt="GeForce Asus RT 3060">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Tarjeta de Video Geforce Asus RT 3060 12GB OC Gaming PCIEX</h5>
+                                                <p class="brand-subtitle text-muted">Marca: Asus</p>
+                                                <div class="product-details d-flex justify-content-between align-items-center mb-2">
+                                                    <span class="product-id">ID 49677</span>
+                                                    <span class="product-stock">5 Unid.</span>
+                                                </div>
+                                                <div class="product-prices mb-2">
+                                                    <p class="price">$323.900 <small>Transf.</small></p>
+                                                    <p class="price">$344.574 <small>Otros medios de pago</small></p>
+                                                </div>
+                                                <button class="btn btn-primary">
+                                                    <i class="bi bi-cart-plus"></i> Agregar al carrito
+                                                </button>
                                             </div>
-                                            <button class="btn btn-primary">
-                                                <i class="bi bi-cart-plus"></i> Agregar al carrito
-                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- Producto 3 -->
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="./static/img/LG Monitor.jpg" class="card-img-top" alt="Monitor LG 49'">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Monitor LG 49" ULTRAGEAR 5120 X 1440 1MS 144HZ</h5>
+                                                <p class="brand-subtitle text-muted">Marca: LG</p>
+                                                <div class="product-details d-flex justify-content-between align-items-center mb-2">
+                                                    <span class="product-id">ID 49140</span>
+                                                    <span class="product-stock">15 Unid.</span>
+                                                </div>
+                                                <div class="product-prices mb-2">
+                                                    <p class="price">$1.079.900 <small>Transf.</small></p>
+                                                    <p class="price">$1.148.830 <small>Otros medios de pago</small></p>
+                                                </div>
+                                                <button class="btn btn-primary">
+                                                    <i class="bi bi-cart-plus"></i> Agregar al carrito
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Producto 4 -->
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="https://ac-resources.nyc3.cdn.digitaloceanspaces.com/images/products/20240627_173057_1.png"
+                                                class="card-img-top" alt="CPU Cooler Master Hyper 212">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Ventilador para CPU Cooler Master Hyper 212 NEW</h5>
+                                                <p class="brand-subtitle text-muted">Marca: Cooler Master</p>
+                                                <div class="product-details d-flex justify-content-between align-items-center mb-2">
+                                                    <span class="product-id">ID 49679</span>
+                                                    <span class="product-stock">10 Unid.</span>
+                                                </div>
+                                                <div class="product-prices mb-2">
+                                                    <p class="price">$32.500 <small>Transf.</small></p>
+                                                    <p class="price">$34.574 <small>Otros medios de pago</small></p>
+                                                </div>
+                                                <button class="btn btn-primary">
+                                                    <i class="bi bi-cart-plus"></i> Agregar al carrito
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Producto 2 -->
-                                <div class="col">
-                                    <div class="card">
-                                        <img src="./static/img/Geforce Asus RT 3060.jpg" class="card-img-top"
-                                            alt="GeForce Asus RT 3060">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Tarjeta de Video Geforce Asus RT 3060 12GB OC
-                                                Gaming PCIEX
-                                            </h5>
-                                            <p class="brand-subtitle text-muted">Marca: Asus</p>
-                                            <div
-                                                class="product-details d-flex justify-content-between align-items-center mb-2">
-                                                <span class="product-id">ID 49677</span>
-                                                <span class="product-stock">5 Unid.</span>
+                            </div>
+        
+                            <!-- Segunda vista con 4 productos (Similar a la primera vista) -->
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <!-- Producto 1 -->
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="./static/img/memoria_kingston.webp"
+                                                class="card-img-top" alt="Sodimm DDR5 Kingston">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Memoria Sodimm DDR5 Kingston 16GB 5600MT/S UNBUFFERED</h5>
+                                                <p class="brand-subtitle text-muted">Marca: Kingston</p>
+                                                <div class="product-details d-flex justify-content-between align-items-center mb-2">
+                                                    <span class="product-id">ID 49501</span>
+                                                    <span class="product-stock">30 Unid.</span>
+                                                </div>
+                                                <div class="product-prices mb-2">
+                                                    <p class="price">$57.500 <small>Transf.</small></p>
+                                                    <p class="price">$61.170 <small>Otros medios de pago</small></p>
+                                                </div>
+                                                <button class="btn btn-primary">
+                                                    <i class="bi bi-cart-plus"></i> Agregar al carrito
+                                                </button>
                                             </div>
-                                            <div class="product-prices mb-2">
-                                                <p class="price">$323.900 <small>Transf.</small></p>
-                                                <p class="price">$344.574 <small>Otros medios de pago</small></p>
-                                            </div>
-                                            <button class="btn btn-primary">
-                                                <i class="bi bi-cart-plus"></i> Agregar al carrito
-                                            </button>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- Producto 3 -->
-                                <div class="col">
-                                    <div class="card">
-                                        <img src="./static/img/LG Monitor.jpg" class="card-img-top" alt="Monitor LG 49'">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Monitor LG 49" ULTRAGEAR
-                                                5120 X 1440 1MS 144HZ
-                                            </h5>
-                                            <p class="brand-subtitle text-muted">Marca: LG</p>
-                                            <div
-                                                class="product-details d-flex justify-content-between align-items-center mb-2">
-                                                <span class="product-id">ID 49140</span>
-                                                <span class="product-stock">15 Unid.</span>
+                                    <!-- Producto 2 -->
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="./static/img/audi-razer_1.webp"
+                                                class="card-img-top" alt="Audifonos Gamer Razer Blackshark">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Audifono Gamer Razer Blackshark V2 X - Wired - RZ04-04570100-R3U1</h5>
+                                                <p class="brand-subtitle text-muted">Marca: Razer</p>
+                                                <div class="product-details d-flex justify-content-between align-items-center mb-2">
+                                                    <span class="product-id">ID 49201</span>
+                                                    <span class="product-stock">12 Unid.</span>
+                                                </div>
+                                                <div class="product-prices mb-2">
+                                                    <p class="price">$69.500 <small>Transf.</small></p>
+                                                    <p class="price">$73.933 <small>Otros medios de pago</small></p>
+                                                </div>
+                                                <button class="btn btn-primary">
+                                                    <i class="bi bi-cart-plus"></i> Agregar al carrito
+                                                </button>
                                             </div>
-                                            <div class="product-prices mb-2">
-                                                <p class="price">$1.079.900 <small>Transf.</small></p>
-                                                <p class="price">$1.148.830 <small>Otros medios de pago</small></p>
-                                            </div>
-                                            <button class="btn btn-primary">
-                                                <i class="bi bi-cart-plus"></i> Agregar al carrito
-                                            </button>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- Producto 4 -->
-                                <div class="col">
-                                    <div class="card">
-                                        <img src="https://ac-resources.nyc3.cdn.digitaloceanspaces.com/images/products/20240627_173057_1.png"
-                                            class="card-img-top" alt="CPU Cooler Master Hyper 212">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Ventilador para CPU Cooler
-                                                Master Hyper 212
-                                                NEW</h5>
-                                            <p class="brand-subtitle text-muted">Marca: Cooler Master</p>
-                                            <div
-                                                class="product-details d-flex justify-content-between align-items-center mb-2">
-                                                <span class="product-id">ID 49679</span>
-                                                <span class="product-stock">10 Unid.</span>
+                                    <!-- Producto 3 -->
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="./static/img/mouse_razer.webp"
+                                                class="card-img-top" alt="Mouse Razer Viper V3">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Mouse Gamer Razer Viper V3 Hyperspeed Black FRML</h5>
+                                                <p class="brand-subtitle text-muted">Marca: Razer</p>
+                                                <div class="product-details d-flex justify-content-between align-items-center mb-2">
+                                                    <span class="product-id">ID 49581</span>
+                                                    <span class="product-stock">+100 Unid.</span>
+                                                </div>
+                                                <div class="product-prices mb-2">
+                                                    <p class="price">$80.500 <small>Transf.</small></p>
+                                                    <p class="price">$85.638 <small>Otros medios de pago</small></p>
+                                                </div>
+                                                <button class="btn btn-primary">
+                                                    <i class="bi bi-cart-plus"></i> Agregar al carrito
+                                                </button>
                                             </div>
-                                            <div class="product-prices mb-2">
-                                                <p class="price">$32.500 <small>Transf.</small></p>
-                                                <p class="price">$34.574 <small>Otros medios de pago</small></p>
+                                        </div>
+                                    </div>
+                                    <!-- Producto 4 -->
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="./static/img/teclado_razer.webp"
+                                                class="card-img-top" alt="Teclado Mecanico Razer Ornata">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Teclado Mecanico Razer Ornata V3 Bajo Perfil - RGB Español</h5>
+                                                <p class="brand-subtitle text-muted">Marca: Razer</p>
+                                                <div class="product-details d-flex justify-content-between align-items-center mb-2">
+                                                    <span class="product-id">ID 49679</span>
+                                                    <span class="product-stock">10 Unid.</span>
+                                                </div>
+                                                <div class="product-prices mb-2">
+                                                    <p class="price">$68.500 <small>Transf.</small></p>
+                                                    <p class="price">$72.872 <small>Otros medios de pago</small></p>
+                                                </div>
+                                                <button class="btn btn-primary">
+                                                    <i class="bi bi-cart-plus"></i> Agregar al carrito
+                                                </button>
                                             </div>
-                                            <button class="btn btn-primary">
-                                                <i class="bi bi-cart-plus"></i> Agregar al carrito
-                                            </button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- Segunda vista con 4 productos (Similar a la primera vista) -->
-                        <div class="carousel-item">
-                            <div class="row">
-                                <!-- Producto 1 -->
-                                <div class="col">
-                                    <div class="card">
-                                        <img src="./static/img/memoria_kingston.webp"
-                                            class="card-img-top" alt="Sodimm DDR5 Kingston">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Memoria Sodimm DDR5 Kingston
-                                                16GB 5600MT/S UNBUFFERED
-                                            </h5>
-                                            <p class="brand-subtitle text-muted">Marca: Kingston</p>
-                                            <div
-                                                class="product-details d-flex justify-content-between align-items-center mb-2">
-                                                <span class="product-id">ID 49501</span>
-                                                <span class="product-stock">30 Unid.</span>
-                                            </div>
-                                            <div class="product-prices mb-2">
-                                                <p class="price">$57.500 <small>Transf.</small></p>
-                                                <p class="price">$61.170 <small>Otros medios de pago</small></p>
-                                            </div>
-                                            <button class="btn btn-primary">
-                                                <i class="bi bi-cart-plus"></i> Agregar al carrito
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Producto 2 -->
-                                <div class="col">
-                                    <div class="card">
-                                        <img src="./static/img/audi-razer_1.webp"
-                                            class="card-img-top" alt="Audifonos Gamer Razer Blackshark">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Audifono Gamer Razer Blackshark V2 X - Wired
-                                                - RZ04-04570100-R3U1
-                                            </h5>
-                                            <p class="brand-subtitle text-muted">Marca: Razer</p>
-                                            <div
-                                                class="product-details d-flex justify-content-between align-items-center mb-2">
-                                                <span class="product-id">ID 49201</span>
-                                                <span class="product-stock">12 Unid.</span>
-                                            </div>
-                                            <div class="product-prices mb-2">
-                                                <p class="price">$69.500 <small>Transf.</small></p>
-                                                <p class="price">$73.933 <small>Otros medios de pago</small></p>
-                                            </div>
-                                            <button class="btn btn-primary">
-                                                <i class="bi bi-cart-plus"></i> Agregar al carrito
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Producto 3 -->
-                                <div class="col">
-                                    <div class="card">
-                                        <img src="./static/img/mouse_razer.webp"
-                                            class="card-img-top" alt="Mouse Razer Viper V3">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Mouse Gamer Razer Viper V3
-                                                Hyperspeed Black FRML
-                                            </h5>
-                                            <p class="brand-subtitle text-muted">Marca: Razer</p>
-                                            <div
-                                                class="product-details d-flex justify-content-between align-items-center mb-2">
-                                                <span class="product-id">ID 49581</span>
-                                                <span class="product-stock">+100 Unid.</span>
-                                            </div>
-                                            <div class="product-prices mb-2">
-                                                <p class="price">$80.500 <small>Transf.</small></p>
-                                                <p class="price">$85.638 <small>Otros medios de pago</small></p>
-                                            </div>
-                                            <button class="btn btn-primary">
-                                                <i class="bi bi-cart-plus"></i> Agregar al carrito
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Producto 4 -->
-                                <div class="col">
-                                    <div class="card">
-                                        <img src="./static/img/teclado_razer.webp"
-                                            class="card-img-top" alt="Teclado Mecanico Razer Ornata">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Teclado Mecanico Razer Ornata
-                                                V3 Bajo Perfil -
-                                                RGB Español
-                                            </h5>
-                                            <p class="brand-subtitle text-muted">Marca: Razer</p>
-                                            <div
-                                                class="product-details d-flex justify-content-between align-items-center mb-2">
-                                                <span class="product-id">ID 49679</span>
-                                                <span class="product-stock">10 Unid.</span>
-                                            </div>
-                                            <div class="product-prices mb-2">
-                                                <p class="price">$68.500 <small>Transf.</small></p>
-                                                <p class="price">$72.872 <small>Otros medios de pago</small></p>
-                                            </div>
-                                            <button class="btn btn-primary">
-                                                <i class="bi bi-cart-plus"></i> Agregar al carrito
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        
+                        <!-- Controles del carrusel -->
+                        <a class="carousel-control-prev" href="#carouselProductos" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselProductos" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
                     </div>
-                    <!-- Controles del carrusel -->
-                    <a class="carousel-control-prev" href="#carouselProductos" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselProductos" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    </a>
                 </div>
             </div>
         </section>
+        
     </main>
     <!-- End Galeria de Productos -->
     <!-- Comienzo Footer -->
@@ -504,5 +489,10 @@
     <script src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js' defer></script>
     <!-- Vínculo Archivo JS -->
     <script src="./static/js/app.js"></script>
+    <!-- Script AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
