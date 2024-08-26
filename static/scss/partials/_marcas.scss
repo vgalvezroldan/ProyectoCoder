@@ -1,53 +1,58 @@
-.pt-5.pb-5 {
+.marcas-section {
+  padding: 20px 0;
+
   .marcas-title {
-    background-color: $primary-color; // Fondo verde para el título
+    background-color: $primary-color;
     text-align: center;
     padding: 15px 0;
-    margin-bottom: 40px; // Aumentamos el margen inferior para más separación
-    width: 100%;
-    max-width: 1090px;
-    margin: 0 auto; // Centramos el título
+    max-width: 1290px;
+    margin: 0 auto;
 
     h2 {
       margin: 0;
       font-weight: bold;
-      font-family: $font-family-base;
-      color: $secondary-color; // Texto blanco
+      color: #ffffff;
     }
   }
 
-  .carousel {
-    .carousel-inner {
-      transition: transform 2s ease-in-out;
+  .scroll {
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+    width: 100%;
 
-      .carousel-item {
-        transition: opacity 2s ease-in-out;
-        opacity: 0;
+    div {
+      display: flex;
+      white-space: nowrap;
+      animation: animate 30s linear infinite;
+    }
 
-        &.active {
-          opacity: 1;
-        }
+    .logo {
+      width: 150px; 
+      height: 100px; 
+      margin: 0 20px;
+      transition: .5s;
+      cursor: pointer;
+      object-fit: contain; 
+
+      &:not(:hover) {
+        filter: grayscale(100%);
       }
     }
   }
 
-  .card {
-    border: none;
-    margin: 0 auto;
-    flex: 0 0 auto;
-    width: 170px;
-
-    img {
-      width: 100%;
-      height: 125px;
-      transition: transform 2s, opacity 2s, box-shadow 0.3s ease;
-      transform-style: preserve-3d;
-
-      &:hover {
-        -webkit-transform: rotateY(180deg);
-        transform: rotateY(180deg);
-        opacity: 0.7;
-      }
+  @keyframes animate {
+    0% {
+      transform: translateX(0);
     }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .scroll:hover div {
+    animation-play-state: paused;
   }
 }

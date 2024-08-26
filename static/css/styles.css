@@ -143,47 +143,55 @@ main {
   margin-right: 5px;
 }
 
-.pt-5.pb-5 .marcas-title {
+.marcas-section {
+  padding: 20px 0;
+}
+.marcas-section .marcas-title {
   background-color: rgb(0, 248, 62);
   text-align: center;
   padding: 15px 0;
-  margin-bottom: 40px;
-  width: 100%;
-  max-width: 1090px;
+  max-width: 1290px;
   margin: 0 auto;
 }
-.pt-5.pb-5 .marcas-title h2 {
+.marcas-section .marcas-title h2 {
   margin: 0;
   font-weight: bold;
-  font-family: "Roboto", sans-serif;
-  color: #fff;
+  color: #ffffff;
 }
-.pt-5.pb-5 .carousel .carousel-inner {
-  transition: transform 2s ease-in-out;
-}
-.pt-5.pb-5 .carousel .carousel-inner .carousel-item {
-  transition: opacity 2s ease-in-out;
-  opacity: 0;
-}
-.pt-5.pb-5 .carousel .carousel-inner .carousel-item.active {
-  opacity: 1;
-}
-.pt-5.pb-5 .card {
-  border: none;
-  margin: 0 auto;
-  flex: 0 0 auto;
-  width: 170px;
-}
-.pt-5.pb-5 .card img {
+.marcas-section .scroll {
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
   width: 100%;
-  height: 125px;
-  transition: transform 2s, opacity 2s, box-shadow 0.3s ease;
-  transform-style: preserve-3d;
 }
-.pt-5.pb-5 .card img:hover {
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-  opacity: 0.7;
+.marcas-section .scroll div {
+  display: flex;
+  white-space: nowrap;
+  animation: animate 30s linear infinite;
+}
+.marcas-section .scroll .logo {
+  width: 150px;
+  height: 100px;
+  margin: 0 20px;
+  transition: 0.5s;
+  cursor: pointer;
+  object-fit: contain;
+}
+.marcas-section .scroll .logo:not(:hover) {
+  filter: grayscale(100%);
+}
+@keyframes animate {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.marcas-section .scroll:hover div {
+  animation-play-state: paused;
 }
 
 .footer-section {
