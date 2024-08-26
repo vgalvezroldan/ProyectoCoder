@@ -38,3 +38,14 @@
         border-color: $navbar-text-color;
     }
 }
+
+.cart-logo {
+    width: 30px;
+    margin-left: 5px;
+}
+
+.user-logo {
+    width: 30px;
+    color: $navbar-text-color;
+    background-color: $navbar-background;
+}
