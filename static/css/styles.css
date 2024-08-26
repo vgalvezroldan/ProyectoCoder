@@ -9,7 +9,7 @@ main {
 }
 
 .navbar-custom {
-  background-color: rgba(0, 248, 62, 0.712);
+  background-color: rgb(0, 248, 62);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,9 +48,6 @@ main {
 .navbar-custom .navbar-toggler {
   border-color: #fff;
 }
-.navbar-custom .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28200, 200, 200, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
 
 .productos-section {
   padding: 20px 0;
@@ -59,11 +56,11 @@ main {
   align-items: center;
 }
 .productos-section .productos-title {
-  background-color: rgba(0, 248, 62, 0.712);
+  background-color: rgb(0, 248, 62);
   text-align: center;
   padding: 15px 0;
   margin-bottom: 20px;
-  width: 100%;
+  width: 74%;
   max-width: 1090px;
 }
 .productos-section .productos-title h2 {
@@ -119,7 +116,7 @@ main {
   font-size: 0.85rem;
 }
 .productos-section .card .card-body .btn {
-  background-color: rgba(0, 248, 62, 0.712);
+  background-color: rgb(0, 248, 62);
   color: #fff;
   border: none;
   display: flex;
@@ -129,14 +126,14 @@ main {
   padding: 8px;
 }
 .productos-section .card .card-body .btn:hover {
-  background-color: rgba(0, 197, 49, 0.712);
+  background-color: #00c531;
 }
 .productos-section .card .card-body .btn i {
   margin-right: 5px;
 }
 
 .pt-5.pb-5 .marcas-title {
-  background-color: rgba(0, 248, 62, 0.712);
+  background-color: rgb(0, 248, 62);
   text-align: center;
   padding: 15px 0;
   margin-bottom: 40px;
@@ -179,7 +176,7 @@ main {
 }
 
 .footer-section {
-  background-color: rgba(0, 248, 62, 0.712);
+  background-color: rgb(0, 248, 62);
   color: #fff;
   text-align: center;
   padding: 10px 0;
@@ -204,7 +201,7 @@ main {
 .btn-siguiente {
   display: inline-block;
   margin: 30px auto;
-  background-color: rgba(0, 248, 62, 0.712);
+  background-color: rgb(0, 248, 62);
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -216,7 +213,7 @@ main {
   transition: background-color 0.3s ease;
 }
 .btn-siguiente:hover {
-  background-color: rgba(0, 197, 49, 0.712);
+  background-color: #00c531;
 }
 
 @media (max-width: 991px) {
@@ -259,11 +256,11 @@ main {
   align-items: center;
 }
 .novedades-section .novedades-title {
-  background-color: rgba(0, 248, 62, 0.712);
+  background-color: rgb(0, 248, 62);
   text-align: center;
   padding: 15px 0;
   margin-bottom: 20px;
-  width: 100%;
+  width: 96%;
   max-width: 1090px;
 }
 .novedades-section .novedades-title h2 {
@@ -315,7 +312,7 @@ main {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .filter-sidebar h4 {
-  color: rgba(0, 248, 62, 0.712);
+  color: rgb(0, 248, 62);
   margin-bottom: 15px;
   text-align: center;
 }
@@ -323,19 +320,19 @@ main {
   margin-bottom: 10px;
 }
 .filter-sidebar .form-check .form-check-input {
-  accent-color: rgba(0, 248, 62, 0.712);
+  accent-color: rgb(0, 248, 62);
 }
 .filter-sidebar .form-check .form-check-label {
   margin-left: 5px;
   color: #333;
 }
 .filter-sidebar .form-check:hover .form-check-label {
-  color: rgba(0, 248, 62, 0.712);
+  color: rgb(0, 248, 62);
 }
 .filter-sidebar .btn-filter {
   display: block;
   width: 100%;
-  background-color: rgba(0, 248, 62, 0.712);
+  background-color: rgb(0, 248, 62);
   color: #fff;
   border: none;
   padding: 10px;
@@ -347,7 +344,7 @@ main {
   transition: background-color 0.3s ease;
 }
 .filter-sidebar .btn-filter:hover {
-  background-color: rgba(0, 197, 49, 0.712);
+  background-color: #00c531;
 }
 
 /*# sourceMappingURL=styles.css.map */
