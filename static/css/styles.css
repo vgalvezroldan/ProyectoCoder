@@ -23,6 +23,7 @@ main {
 }
 .navbar-custom .navbar-brand img.navbar-logo {
   height: 50px;
+  width: 50px;
 }
 .navbar-custom .navbar-nav {
   display: flex;
@@ -51,11 +52,13 @@ main {
 
 .cart-logo {
   width: 30px;
+  height: 30px;
   margin-left: 5px;
 }
 
 .user-logo {
   width: 30px;
+  height: 30px;
 }
 
 .productos-section {
