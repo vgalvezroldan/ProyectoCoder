@@ -37,3 +37,87 @@
     margin: 0 auto 20px; // Centramos la card y añadimos margen inferior
   }
 }
+
+
+@media (max-width: 768px) {
+  // Modificación para .novedad-vertical
+  .novedad-vertical {
+    img {
+      width: 300px; // La imagen vertical ocupa el 80% del ancho de la pantalla
+      height: auto; // Ajusta la altura automáticamente para mantener la proporción
+    }
+  }
+
+  // Modificación para .novedad-horizontal
+  .novedad-horizontal {
+    img {
+      width: 80%; // Las imágenes horizontales ocupan el 80% del ancho de la pantalla
+      height: auto; // Ajusta la altura automáticamente para mantener la proporción
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .novedad-vertical {
+    img {
+      width: 400px; // La imagen vertical ocupa el 80% del ancho de la pantalla
+      height: auto; // Ajusta la altura automáticamente para mantener la proporción
+    }
+  }
+
+  // Modificación para .novedad-horizontal
+  .novedad-horizontal {
+    img {
+      width: 400px; // Las imágenes horizontales ocupan el 80% del ancho de la pantalla
+      height: auto; // Ajusta la altura automáticamente para mantener la proporción
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .novedad-item {
+    img {
+      width: 100%; // Las imágenes ocupan todo el ancho disponible en su contenedor
+      height: 455px; // La altura permanece fija como en el diseño original
+    }
+  }
+
+  .novedad-vertical {
+    flex: 1 1 300px; // Ancho fijo para las imágenes verticales
+    max-width: 300px;
+  }
+
+  .novedad-horizontal {
+    flex: 2 1 300px; // Las imágenes horizontales ocupan el doble de espacio
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 600px;
+    gap: 10px;
+}
+}
+
+
+
+@media (min-width: 1920px) {
+  .novedad-item {
+    img {
+      width: 100%; // Las imágenes ocupan todo el ancho disponible en su contenedor
+      height: 455px; // La altura permanece fija como en el diseño original
+    }
+  }
+
+  .novedad-vertical {
+    flex: 1 1 300px; // Mantiene el ancho fijo de las imágenes verticales
+    max-width: 300px;
+  }
+
+  .novedad-horizontal {
+    flex: 2 1 300px; // Las imágenes horizontales ocupan el doble de espacio
+    max-width: 600px;
+    img {
+      height: 50%; // Mantiene la altura fija del diseño original
+    }
+  }
+}
+
