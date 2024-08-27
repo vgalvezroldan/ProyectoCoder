@@ -312,6 +312,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
 }
 .novedades-section .novedades-title {
   background-color: #dc5f00;
