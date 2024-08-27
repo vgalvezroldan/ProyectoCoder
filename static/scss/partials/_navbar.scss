@@ -8,6 +8,8 @@
         width: 100%;
     }
 
+    
+
     .navbar-brand {
         img.navbar-logo {
             height: 50px;
@@ -40,13 +42,25 @@
 }
 
 .cart-logo {
-    width: 30px;
-    height: 30px;
-    margin-left: 5px;
+    width: 90px;
+    height: 90px;
 }
 
 .user-logo {
-    width: 30px;
-    height: 30px;
+    width: 90px;
+    height: 90px;
     
 }
+
+#carouselExampleIndicators {
+    .carousel-inner {
+      .carousel-item {
+        img {
+          margin-top: 105px;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  

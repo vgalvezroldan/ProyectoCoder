@@ -5,11 +5,11 @@ body {
 }
 
 main {
-  padding-top: 75px;
+  background-color: #9499a8;
 }
 
 .navbar-custom {
-  background-color: rgb(0, 248, 62);
+  background-color: rgba(220, 95, 0, 0.9254901961);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,34 +30,39 @@ main {
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-  color: #fff;
+  color: #EEEEEE;
 }
 .navbar-custom .navbar-icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: #EEEEEE;
 }
 .navbar-custom .nav-link {
   font-family: "Roboto", sans-serif;
-  color: #fff;
+  color: #EEEEEE;
 }
 .navbar-custom .nav-link:hover {
   color: rgba(0, 0, 0, 0.7);
 }
 .navbar-custom .navbar-toggler {
-  border-color: #fff;
+  border-color: #EEEEEE;
 }
 
 .cart-logo {
-  width: 30px;
-  height: 30px;
-  margin-left: 5px;
+  width: 90px;
+  height: 90px;
 }
 
 .user-logo {
-  width: 30px;
-  height: 30px;
+  width: 90px;
+  height: 90px;
+}
+
+#carouselExampleIndicators .carousel-inner .carousel-item img {
+  margin-top: 105px;
+  width: 100%;
+  height: 100%;
 }
 
 .productos-section {
@@ -65,9 +70,22 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
+}
+.productos-section .productos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.productos-section .card {
+  flex: 1 1 300px;
+  max-width: 300px;
+  min-width: 280px;
+  min-height: 450px;
 }
 .productos-section .productos-title {
-  background-color: rgb(0, 248, 62);
+  background-color: rgba(220, 95, 0, 0.9254901961);
   text-align: center;
   padding: 15px 0;
   margin-bottom: 20px;
@@ -78,17 +96,20 @@ main {
   margin: 0;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
-  color: #fff;
+  color: #EEEEEE;
 }
-.productos-section .productos-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+.productos-section .container {
+  max-width: 100%;
   padding: 0 20px;
+  overflow-x: hidden;
+}
+.productos-section .carousel-item .row {
+  justify-content: center;
+  min-height: 460px;
+  transition: all 0.5s ease-in-out;
 }
 .productos-section .card {
-  background-color: #fff;
+  background-color: #EEEEEE;
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -98,16 +119,26 @@ main {
   justify-content: space-between;
   width: 300px;
   height: 450px;
+  border-radius: 5px;
+  transform: scale(0.95);
+  opacity: 0.9;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 .productos-section .card .card-img-top {
   width: 100%;
   height: 200px;
   object-fit: cover;
   transition: transform 0.5s ease, opacity 0.5s ease;
+  padding: 5px;
+  border-radius: 10px;
 }
 .productos-section .card:hover .card-img-top {
   transform: scale(1.1);
   opacity: 0.9;
+}
+.productos-section .card:hover {
+  transform: scale(1);
+  opacity: 1;
 }
 .productos-section .card .card-body {
   padding: 10px;
@@ -127,8 +158,8 @@ main {
   font-size: 0.85rem;
 }
 .productos-section .card .card-body .btn {
-  background-color: rgb(0, 248, 62);
-  color: #fff;
+  background-color: rgba(220, 95, 0, 0.9254901961);
+  color: #EEEEEE;
   border: none;
   display: flex;
   align-items: center;
@@ -137,17 +168,29 @@ main {
   padding: 8px;
 }
 .productos-section .card .card-body .btn:hover {
-  background-color: #00c531;
+  background-color: rgba(169, 73, 0, 0.9254901961);
 }
 .productos-section .card .card-body .btn i {
   margin-right: 5px;
+}
+.productos-section .carousel-control-prev,
+.productos-section .carousel-control-next {
+  display: none;
+}
+.productos-section .carousel-item.active {
+  transform: scale(1);
+  opacity: 1;
+}
+.productos-section .carousel-item-next, .productos-section .carousel-item-prev {
+  transform: scale(0.95);
+  opacity: 0.9;
 }
 
 .marcas-section {
   padding: 20px 0;
 }
 .marcas-section .marcas-title {
-  background-color: rgb(0, 248, 62);
+  background-color: rgba(220, 95, 0, 0.9254901961);
   text-align: center;
   padding: 15px 0;
   max-width: 1290px;
@@ -195,11 +238,10 @@ main {
 }
 
 .footer-section {
-  background-color: rgb(0, 248, 62);
-  color: #fff;
+  background-color: rgba(220, 95, 0, 0.9254901961);
+  color: #EEEEEE;
   text-align: center;
   padding: 10px 0;
-  margin-top: 15px;
 }
 .footer-section .container {
   display: flex;
@@ -220,8 +262,8 @@ main {
 .btn-siguiente {
   display: inline-block;
   margin: 30px auto;
-  background-color: rgb(0, 248, 62);
-  color: #fff;
+  background-color: rgba(220, 95, 0, 0.9254901961);
+  color: #EEEEEE;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -232,7 +274,7 @@ main {
   transition: background-color 0.3s ease;
 }
 .btn-siguiente:hover {
-  background-color: #00c531;
+  background-color: rgba(169, 73, 0, 0.9254901961);
 }
 
 @media (max-width: 991px) {
@@ -275,7 +317,7 @@ main {
   align-items: center;
 }
 .novedades-section .novedades-title {
-  background-color: rgb(0, 248, 62);
+  background-color: rgba(220, 95, 0, 0.9254901961);
   text-align: center;
   padding: 15px 0;
   margin-bottom: 20px;
@@ -286,7 +328,7 @@ main {
   margin: 0;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
-  color: #fff;
+  color: #EEEEEE;
 }
 .novedades-section .novedades-container {
   display: flex;
@@ -305,7 +347,7 @@ main {
 }
 .novedades-section .novedad-item img {
   width: 100%;
-  height: 100%;
+  height: 445px;
   border-radius: 1px;
 }
 .novedades-section .novedad-vertical {
@@ -331,7 +373,7 @@ main {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .filter-sidebar h4 {
-  color: rgb(0, 248, 62);
+  color: rgba(220, 95, 0, 0.9254901961);
   margin-bottom: 15px;
   text-align: center;
 }
@@ -339,19 +381,19 @@ main {
   margin-bottom: 10px;
 }
 .filter-sidebar .form-check .form-check-input {
-  accent-color: rgb(0, 248, 62);
+  accent-color: rgba(220, 95, 0, 0.9254901961);
 }
 .filter-sidebar .form-check .form-check-label {
   margin-left: 5px;
   color: #333;
 }
 .filter-sidebar .form-check:hover .form-check-label {
-  color: rgb(0, 248, 62);
+  color: rgba(220, 95, 0, 0.9254901961);
 }
 .filter-sidebar .btn-filter {
   display: block;
   width: 100%;
-  background-color: rgb(0, 248, 62);
+  background-color: rgba(220, 95, 0, 0.9254901961);
   color: #fff;
   border: none;
   padding: 10px;
@@ -363,7 +405,7 @@ main {
   transition: background-color 0.3s ease;
 }
 .filter-sidebar .btn-filter:hover {
-  background-color: #00c531;
+  background-color: rgba(169, 73, 0, 0.9254901961);
 }
 
 /*# sourceMappingURL=styles.css.map */
