@@ -1,0 +1,29 @@
+// Sección "Sobre Nosotros"
+.about-us, .location {
+    background-color: $secondary-color;
+    padding: $padding-base;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow-base;
+    margin-bottom: $margin-base;
+    
+    h2 {
+      color: $primary-color;
+      text-align: center;
+      
+    }
+  
+    p {
+      color: $primary-color;
+    }
+  
+    iframe {
+      width: 100%;
+      height: 450px;
+      border-radius: $border-radius;
+      box-shadow: $box-shadow-base;
+    }
+
+    .text-image {
+        color: $primary-color;
+    }
+  }

@@ -38,15 +38,17 @@
         <meta name="twitter:title" content="DyD Tecnology">
         <meta name="twitter:description" content="DyD Tecnology es tu tienda informática de confianza. Ofrecemos todo tipo de insumos a pedidos de nuestros clientes, garantizando calidad y satisfacción.">
         <meta name="twitter:image" content="https://i.postimg.cc/VNQmCdkR/2024-08-26-11h36-04.png">
+        <!-- AOS Animación en Scroll -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
 <body>
     <header>
         <!-- Comienzo Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-custom">
             <div class="container-fluid">
                 <!-- Logo DyD -->
                 <a class="navbar-brand" href="../index.html">
-                    <img src="../static/img/logo.png" alt="Logo DyD" class="navbar-logo">
+                    <img src="../static/img/logo_2.0.svg" alt="Logo DyD" class="navbar-logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -69,10 +71,9 @@
                             <a class="nav-link" href="nosotros.html">Sobre Nosotros</a>
                         </li>
                     </ul>
-                    <!-- Navbar Icons -->
                     <div class="navbar-icons d-none d-lg-flex align-items-center">
-                        <img src="../static/img/user.gif" class="user-logo">
-                        <img src="../static/img/cart2.gif" class="cart-logo"></div>
+                        <img src="../static/img/user.svg" class="user-logo">
+                        <img src="../static/img/cart.svg" class="cart-logo"></div>
                     </div>
                 </div>
             </div>
@@ -80,8 +81,11 @@
         <!-- Fin Navbar -->
     </header>
     <!-- Comienzo Main -->
-    <main class="container-fluid mt-5 pt-5">
+    <main class="container-fluid pt-5">
         <!-- Comienzo ASIDE FILTROS -->
+        <div data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
         <aside class="filter-sidebar">
             <div class="filter-container">
                 <h4>Filtros</h4>
@@ -122,11 +126,13 @@
                 </form>
             </div>
         </aside>
+        </div>
         <!-- Fin ASIDE FILTROS -->
         <!-- Comienzo SECTION PRODUCTOS -->
         <section class="productos-section">
             <div class="productos-container">
                 <!-- 1er Producto -->
+                <div data-aos="zoom-out">
                 <div class="card">
                     <img src="../static/img/procesador_amd.jpg" class="card-img-top" alt="Procesador AMD Ryzen 5">
                     <div class="card-body">
@@ -145,7 +151,9 @@
                         </button>
                     </div>
                 </div>
+                </div>
                 <!-- 2do Producto -->
+                <div data-aos="zoom-out">
                 <div class="card">
                     <img src="../static/img/procesador_amd2.jpg" class="card-img-top" alt="Procesador AMD Ryzen 7 5700G">
                     <div class="card-body">
@@ -164,7 +172,9 @@
                         </button>
                     </div>
                 </div>
+                </div>
                 <!-- 3er Producto -->
+                <div data-aos="zoom-out">
                 <div class="card">
                     <img src="../static/img/procesador_amd3.jpg" class="card-img-top" alt="Procesador AMD Ryzen 9 7950X">
                     <div class="card-body">
@@ -183,7 +193,9 @@
                         </button>
                     </div>
                 </div>
+                </div>
                 <!-- 4to Producto -->
+                <div data-aos="zoom-out">
                 <div class="card">
                     <img src="https://ac-resources.nyc3.cdn.digitaloceanspaces.com/images/products/ixm-rs1-kb-nn-1.jpg" class="card-img-top" alt="Asiento de Cabina Cooler Master">
                     <div class="card-body">
@@ -202,7 +214,9 @@
                         </button>
                     </div>
                 </div>
+                </div>
                 <!-- 5to Producto -->
+                <div data-aos="zoom-out">
                 <div class="card">
                     <img src="https://ac-resources.nyc3.cdn.digitaloceanspaces.com/images/products/20240523_161352_1.webp" class="card-img-top" alt="Cabina Simulador de Carreras Dynx Blackframe">
                     <div class="card-body">
@@ -220,6 +234,7 @@
                             <i class="bi bi-cart-plus"></i> Agregar al carrito
                         </button>
                     </div>
+                </div>
                 </div>
                 <!-- Más cards se pueden añadir aquí -->
             </div>
@@ -248,5 +263,11 @@
     <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
     <script type='text/javascript'
         src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        
+        AOS.init();
+        </script>
+
 </body>
 </html>
