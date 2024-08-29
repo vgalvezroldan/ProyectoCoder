@@ -7,7 +7,7 @@
 
     h4 {
         color: $primary-color; 
-        margin-bottom: 15px;
+        margin-bottom: $margin-small;
         text-align: center;
     }
 
@@ -35,12 +35,12 @@
         color: $fiverth-color;
         border: none;
         padding: 10px;
-        border-radius: 5px;
+        @include border-radius(5px);
         cursor: pointer;
         margin-top: 10px;
         text-align: center;
         font-size: 16px;
-        transition: background-color 0.3s ease;
+        @include transition(background-color 0.3s ease);
 
         &:hover {
             background-color: darken($primary-color, 10%); 

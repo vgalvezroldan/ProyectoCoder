@@ -16,3 +16,6 @@
     box-shadow: $shadow;
   }
   
+  @mixin box-shadow($shadow: $box-shadow-base, $intensity: 1) {
+    box-shadow: scale-color($shadow, $intensity);
+}
