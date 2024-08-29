@@ -1,12 +1,12 @@
 .filter-sidebar {
-    background-color: $cuaternary-color; // Fondo gris claro
+    background-color: $cuaternary-color; 
     padding: 20px;
-    border-radius: 8px; // Bordes redondeados
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Sombra para dar un efecto de profundidad
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     
 
     h4 {
-        color: $primary-color; // Título en color principal
+        color: $primary-color; 
         margin-bottom: 15px;
         text-align: center;
     }
@@ -15,16 +15,16 @@
         margin-bottom: 10px;
 
         .form-check-input {
-            accent-color: $primary-color; // Cambiar color del checkbox
+            accent-color: $primary-color;
         }
 
         .form-check-label {
             margin-left: 5px;
-            color: #333; // Color del texto
+            color: #333; 
         }
 
         &:hover .form-check-label {
-            color: $primary-color; // Cambio de color al pasar el mouse
+            color: $primary-color; 
         }
     }
 
@@ -43,7 +43,7 @@
         transition: background-color 0.3s ease;
 
         &:hover {
-            background-color: darken($primary-color, 10%); // Oscurecer al pasar el mouse
+            background-color: darken($primary-color, 10%); 
         }
     }
 }

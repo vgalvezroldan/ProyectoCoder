@@ -18,7 +18,7 @@
 
 @media (max-width: 992px) {
   .card {
-    width: 45%; // En pantallas medianas, cards ocupan un 45% del contenedor
+    width: 45%; 
     margin-bottom: 20px;
   }
 }
@@ -26,33 +26,30 @@
 @media (max-width: 768px) {
   .productos-container {
     display: flex;
-    justify-content: center; // Asegura que las cards se mantengan centradas
-    align-items: center; // Asegura que las cards se alineen verticalmente en el centro
-    flex-direction: column; // Las cards se apilan una debajo de la otra
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
   }
 
   .card {
-    width: 100%; // Las cards ocupan el 100% del contenedor
-    max-width: 300px; // Se asegura que las cards no sean más anchas que 300px
-    margin: 0 auto 20px; // Centramos la card y añadimos margen inferior
+    width: 100%; 
+    max-width: 300px;
+    margin: 0 auto 20px; 
   }
 }
 
 
 @media (max-width: 768px) {
-  // Modificación para .novedad-vertical
   .novedad-vertical {
     img {
-      width: 300px; // La imagen vertical ocupa el 80% del ancho de la pantalla
-      height: auto; // Ajusta la altura automáticamente para mantener la proporción
+      width: 300px; 
+      height: auto; 
     }
   }
-
-  // Modificación para .novedad-horizontal
   .novedad-horizontal {
     img {
-      width: 80%; // Las imágenes horizontales ocupan el 80% del ancho de la pantalla
-      height: auto; // Ajusta la altura automáticamente para mantener la proporción
+      width: 80%; 
+      height: auto; 
     }
   }
 }
@@ -60,16 +57,14 @@
 @media (max-width: 1280px) {
   .novedad-vertical {
     img {
-      width: 400px; // La imagen vertical ocupa el 80% del ancho de la pantalla
-      height: auto; // Ajusta la altura automáticamente para mantener la proporción
+      width: 400px; 
+      height: auto; 
     }
   }
-
-  // Modificación para .novedad-horizontal
   .novedad-horizontal {
     img {
-      width: 400px; // Las imágenes horizontales ocupan el 80% del ancho de la pantalla
-      height: auto; // Ajusta la altura automáticamente para mantener la proporción
+      width: 400px; 
+      height: auto; 
     }
   }
 }
@@ -77,18 +72,18 @@
 @media (min-width: 1440px) {
   .novedad-item {
     img {
-      width: 100%; // Las imágenes ocupan todo el ancho disponible en su contenedor
-      height: 455px; // La altura permanece fija como en el diseño original
+      width: 100%;
+      height: 455px; 
     }
   }
 
   .novedad-vertical {
-    flex: 1 1 300px; // Ancho fijo para las imágenes verticales
+    flex: 1 1 300px; 
     max-width: 300px;
   }
 
   .novedad-horizontal {
-    flex: 2 1 300px; // Las imágenes horizontales ocupan el doble de espacio
+    flex: 2 1 300px; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -102,21 +97,21 @@
 @media (min-width: 1920px) {
   .novedad-item {
     img {
-      width: 100%; // Las imágenes ocupan todo el ancho disponible en su contenedor
-      height: 455px; // La altura permanece fija como en el diseño original
+      width: 100%;
+      height: 455px; 
     }
   }
 
   .novedad-vertical {
-    flex: 1 1 300px; // Mantiene el ancho fijo de las imágenes verticales
+    flex: 1 1 300px; 
     max-width: 300px;
   }
 
   .novedad-horizontal {
-    flex: 2 1 300px; // Las imágenes horizontales ocupan el doble de espacio
+    flex: 2 1 300px; 
     max-width: 600px;
     img {
-      height: 50%; // Mantiene la altura fija del diseño original
+      height: 50%;
     }
   }
 }

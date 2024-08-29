@@ -1,8 +1,8 @@
 .btn-siguiente {
   display: inline-block;
   margin: 30px auto;
-  background-color: $primary-color; // Fondo verde
-  color: $secondary-color; // Texto blanco
+  background-color: $primary-color; 
+  color: $secondary-color; 
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -13,6 +13,6 @@
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: darken($primary-color, 10%); // Oscurece el fondo al pasar el cursor
+    background-color: darken($primary-color, 10%); 
   }
 }

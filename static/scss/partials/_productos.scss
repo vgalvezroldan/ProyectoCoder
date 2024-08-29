@@ -36,16 +36,16 @@
   }
 
   .container {
-    max-width: 100%; // Asegura que el contenedor no exceda el viewport
-    padding: 0 20px; // Ajusta el padding para evitar desbordamiento
-    overflow-x: hidden; // Asegura que no haya desbordamiento horizontal
+    max-width: 100%; 
+    padding: 0 20px; 
+    overflow-x: hidden; 
   }
 
   .carousel-item {
     .row {
-      justify-content: center; // Centra las columnas dentro del carrusel
-      min-height: 460px; // Forzar una altura mínima para evitar cambios bruscos
-      transition: all 0.5s ease-in-out; // Transición suave en el cambio de productos
+      justify-content: center; 
+      min-height: 460px; 
+      transition: all 0.5s ease-in-out; 
     }
   }
 
@@ -61,9 +61,9 @@
     width: 300px;
     height: 450px;
     border-radius: 5px;
-    transform: scale(0.95); // Escala inicial más pequeña para el efecto de transición
-    opacity: 0.9; // Opacidad inicial para el efecto de desvanecimiento
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; // Transición suave en escala y opacidad
+    transform: scale(0.95); 
+    opacity: 0.9; 
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; 
 
     .card-img-top {
       width: 100%;
@@ -80,8 +80,8 @@
     }
 
     &:hover {
-      transform: scale(1); // Escala a tamaño completo en hover
-      opacity: 1; // Aumenta la opacidad a 1 en hover
+      transform: scale(1); 
+      opacity: 1;
     }
 
     .card-body {
@@ -128,9 +128,6 @@
   .carousel-control-next {
     display: none;
   }
-
-
-  // Transiciones suaves entre los items del carrusel
   .carousel-item.active {
     transform: scale(1);
     opacity: 1;
